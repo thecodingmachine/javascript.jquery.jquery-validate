@@ -2,7 +2,7 @@
     "name": "mouf/javascript.jquery.jquery-validate",
     "description": "This package contains the JQuery Validator. It allows developers to easily validate forms, using CSS classes.",
     "keywords": ["javascript", "jquery", "validation"],
-    "homepage": "mouf-php.com",
+    "homepage": "http://mouf-php.com",
     "type": "mouf-library",
     "license": "MIT",
     "authors": [
