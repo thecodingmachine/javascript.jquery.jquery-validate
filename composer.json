@@ -1,0 +1,29 @@
+{
+    "name": "mouf/javascript.jquery.jquery-validate",
+    "description": "This package contains the JQuery Validator. It allows developers to easily validate forms, using CSS classes.",
+    "keywords": ["javascript", "jquery", "validation"],
+    "homepage": "mouf-php.com",
+    "type": "mouf-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Négrier",
+            "email": "d.negrier@thecodingmachine.com",
+            "homepage": "http://mouf-php.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.3.0",
+		"mouf/javascript.jquery.jquery": ">=1.7.2-dev,<2.0",
+		"mouf/html.utils.i18nweblibrary": ">=2.0.x-dev,<3.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+	    "mouf": {
+	    	"install": [{
+	    		"type" : "file",
+	    		"file" : "install.php"
+	    	}]
+	    }
+	}
+}
