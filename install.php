@@ -20,7 +20,7 @@ if ($moufManager->instanceExists("jQueryValidateLibrary")) {
 $jQueryValidateLib->getProperty("languageDetection")->setValue($defaultLanguageDetection);
 $jQueryValidateLib->getProperty("jsFiles")->setValue(array(
 	'vendor/mouf/javascript.jquery.jquery-validate/jquery.validate.min.js',
-	'vendor/mouf/javascript.jquery.jquery-validate/localization/messages_[lang].js'
+	'vendor/mouf/javascript.jquery.jquery-validate/localization/messages_[lang].min.js'
 ));
 
 $renderer = $moufManager->getInstanceDescriptor('defaultWebLibraryRenderer');
