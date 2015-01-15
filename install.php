@@ -22,10 +22,11 @@ $jQueryValidateLib->getProperty("jsFiles")->setValue(array(
 	'vendor/mouf/javascript.jquery.jquery-validate/jquery.validate.min.js',
 	'vendor/mouf/javascript.jquery.jquery-validate/localization/messages_[lang].min.js'
 ));
-
-$renderer = $moufManager->getInstanceDescriptor('defaultWebLibraryRenderer');
-
-$jQueryValidateLib->getProperty("renderer")->setValue($renderer);
+if ($moufManager->has('defaultWebLibraryRenderer')) {
+	$renderer = $moufManager->getInstanceDescriptor('defaultWebLibraryRenderer');
+	
+	$jQueryValidateLib->getProperty("renderer")->setValue($renderer);
+}
 $jQueryValidateLib->getProperty("dependencies")->setValue(array($moufManager->getInstanceDescriptor('jQueryLibrary')));
 
 $webLibraryManager = $moufManager->getInstanceDescriptor('defaultWebLibraryManager');
