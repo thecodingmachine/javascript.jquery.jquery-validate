@@ -12,14 +12,13 @@ use TheCodingMachine\Funky\ServiceProvider;
 class JQueryValidateServiceProvider extends ServiceProvider
 {
     /**
-     * @Factory(name="jQueryFileTreeWebLibrary", tags={@Tag(name="webLibraries", priority=-10.0)})
+     * @Factory(name="jQueryValidateWebLibrary", tags={@Tag(name="webLibraries", priority=-10.0)})
      */
-    public static function createWebLibrary(ContainerInterface $container): WebLibrary
+    public static function createWebLibrary(): WebLibrary
     {
         return new WebLibrary(array(
                 'vendor/mouf/javascript.jquery.jquery-validate/jquery.validate.min.js'
             ),
-            array(),
-            $container->get('root_url'));
+            array());
     }
 }
