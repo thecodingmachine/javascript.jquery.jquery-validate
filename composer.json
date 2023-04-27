@@ -13,8 +13,8 @@
         }
     ],
     "require": {
-    	"php": ">=5.3.0",
-		"mouf/javascript.jquery.jquery": ">=1.7.2-dev,<2.0",
+    	"php": "^8.0",
+		"mouf/javascript.jquery.jquery": "^2",
         "mouf/html.utils.weblibrarymanager": "^4.0"
     },
     "minimum-stability": "dev",
