@@ -19,6 +19,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "conflict": {
+      "mouf/mouf": "~2.0.0"
+    },
     "autoload": {
       "psr-4": {
         "Mouf\\Javascript\\JQueryValidate\\": "src/"
